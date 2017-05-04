@@ -1,0 +1,16 @@
+{
+  "name": "emmet-parser",
+  "version": "0.0.0",
+  "description": "Emmet String parser",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Thomson <red.cataclysm@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^2.5.0"
+  }
+}
