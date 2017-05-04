@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -14,5 +15,11 @@ module.exports = {
       'node_modules',
       path.resolve(__dirname, 'lib'),
     ]
-  }
+  },
+  plugins: [
+    new webpack.EnvironmentPlugin({
+      NODE_ENV: 'development',
+      DEBUG: true
+    })
+  ]
 };
