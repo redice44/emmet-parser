@@ -1,3 +1,5 @@
 import parser from 'parser';
 
-console.log(parser('div > div { hello world }'));
+var result = document.getElementById('results');
+
+results.appendChild(parser('div > ( div > p {hi} ) + ( div > p {hey} )'));
