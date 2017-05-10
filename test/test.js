@@ -56,3 +56,9 @@ test('div > (ul > li) > (ol > li)', results);
 test('div > ( div > p {hi} ) + ( div > p {hey} )', results);
 test('div > ul > ( li > p {foo} ) + ( li > p {bar} )', results);
 test('div > ul > ( li > p {foo} ) > ( ol > li > p {bar} )', results);
+
+heading('Attributes: IDs and Classes', results);
+test('div#hi > p.show', results);
+test('div > ul > li.red.blue {hi} * 5', results);
+test('div#hi.green > p#yellow.show {foo}' , results);
+
