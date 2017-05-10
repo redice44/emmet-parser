@@ -18,6 +18,7 @@ var results = document.getElementById('results');
 
 heading('Text Processing: Opperator "{<text>}"', results);
 // results.appendChild(parser('p {hello world}'));
+test('{hello}', results);
 test('p {hello world}', results);
 test('p { hello world }', results);
 test('p {hello}', results);
@@ -45,6 +46,9 @@ test('div > ul > li {hi} * 5', results);
 test('div > p {foo} * 5', results);
 
 heading('Grouping: Opperators: "()"', results);
+test('({hi})', results);
+test('(p)', results);
+test('(div > p)', results);
 test('div > ( p {hi} ) + ( p {hey} )', results);
 test('div > (p {hi} ) + ( p {hey} )', results);
 test('div > (p {foo} ) + (ul > li) + (ol > li)', results);
