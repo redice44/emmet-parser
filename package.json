@@ -1,6 +1,6 @@
 {
   "name": "emmet-parser",
-  "version": "0.0.1",
+  "version": "0.0.2a",
   "description": "Emmet String parser",
   "main": "lib/parser.js",
   "scripts": {
